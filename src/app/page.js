@@ -17,7 +17,12 @@ export default function Home() {
 
         <div className="flex items-center justify-center flex-col h-full">
           <div className="w-2/3  lg:w-1/3  sm:w-1/3 ">
-            <Image src={"/logovid.png"} width={2000} height={2000}></Image>
+            <Image
+              alt=""
+              src={"/logovid.png"}
+              width={2000}
+              height={2000}
+            ></Image>
           </div>
           <div
             className="text-white text-lg font-bold"
@@ -61,6 +66,7 @@ export default function Home() {
         >
           <div className="w-full h-1/2 ">
             <Image
+              alt=""
               className="w-full"
               src="1.svg"
               width={2000}
@@ -71,6 +77,7 @@ export default function Home() {
             <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
               <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full -rotate-2 ">
                 <Image
+                  alt=""
                   className="border-8 border-slate-200"
                   style={{ boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)" }}
                   src="/Motorbiker Home 01.png"
@@ -80,7 +87,7 @@ export default function Home() {
             </div>
             <div className="sm:pl-5 flex justify-center flex-col pb-20 w-full sm:h-99">
               <div className="text-4xl xl:text-6xl w-full pt-5 pb-5 font-bold">
-                IT'S SHOWTIME IN ROCKET
+                IT&apos;S SHOWTIME IN ROCKET
               </div>
               <div
                 className="pb-5 text-base w-full xl:text-3xl pr-3 lh leading-relaxed text-ubigray"
@@ -114,6 +121,7 @@ export default function Home() {
         <div>
           <div className="w-full h-1/2 bg-white">
             <Image
+              alt=""
               src="/bg-black-leftright.svg"
               width={2000}
               height={2000}
@@ -125,6 +133,7 @@ export default function Home() {
               <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full -rotate-2 ">
                 <div className="playbtn absolute w-16 h-16 -rotate-2 "></div>
                 <Image
+                  alt=""
                   className="border-8 border-slate-200"
                   style={{ boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)" }}
                   src="/Trailer.png"
@@ -143,9 +152,9 @@ export default function Home() {
                 Secure your pass and be part of a year-long celebration tailored
                 for automobile enthusiasts of all kinds: Embark on an adventure
                 through a lively Hawaiian open-world, situated on the
-                picturesque island of Ya'Hota. Acquire a vast collection of over
-                600 vehicles, ranging from cars and boats to planes and bikes.
-                Form alliances with your friends to traverse the world
+                picturesque island of Ya&apos;Hota. Acquire a vast collection of
+                over 600 vehicles, ranging from cars and boats to planes and
+                bikes. Form alliances with your friends to traverse the world
                 cooperatively or compete against them in demanding PvP modes,
                 accommodating up to 32 players.
               </div>
@@ -172,13 +181,14 @@ export default function Home() {
             className="relative z-11 h-30 sm:h-full"
           >
             <Image
+              alt=""
               className=" h-full w-full"
               src="/MororBiker Wallpaper.png"
               fill
             ></Image>
           </div>
           <div className="relative z-11 h-30 sm:h-full">
-            <Image className=" h-full w-full" src="/bg.jpg" fill></Image>
+            <Image alt="" className=" h-full w-full" src="/bg.jpg" fill></Image>
           </div>
           <div className="absolute mt-10 sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 left-1/5 bottom-16">
             <div className="sm:text-slate-50 font-bold text-2xl sm:text-5xl pb-5">
@@ -187,7 +197,7 @@ export default function Home() {
             <div className="sm:text-slate-50 font-bold sm:text-xl">
               Secure your admission to a year-long festival crafted for car
               enthusiasts of all kinds, located on the stunning island of
-              Ya'Hota.
+              Ya&apos;Hota.
             </div>
           </div>
         </div>
@@ -223,6 +233,7 @@ export default function Home() {
               <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
                 <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full -rotate-2 ">
                   <Image
+                    alt=""
                     className="border-8 border-slate-200"
                     style={{
                       boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
@@ -256,10 +267,10 @@ export default function Home() {
                   encounters. Each playlist is meticulously crafted to plunge
                   you into a distinct car culture realm, featuring customized
                   races, themed events, and other distinctive challenges.
-                  Whether you're honing your skills in vintage classics or
+                  Whether you&apos;re honing your skills in vintage classics or
                   electric supercars, aiming to dominate the racetrack, or
-                  simply enjoying a leisurely cruise with friends, there's a
-                  playlist tailored to suit your preferences.
+                  simply enjoying a leisurely cruise with friends, there&apos;s
+                  a playlist tailored to suit your preferences.
                 </div>
                 <div>
                   <Link className="inline-block btnparent" href="#">
@@ -272,6 +283,7 @@ export default function Home() {
               <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
                 <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full rotate-2 ">
                   <Image
+                    alt=""
                     className="border-8 border-slate-200"
                     style={{
                       boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
@@ -302,8 +314,8 @@ export default function Home() {
                   style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
                 >
                   Prepare yourself for the ultimate driving escapade on the
-                  captivating island of Ya'Hota, renowned as the crown jewel of
-                  the Hawaiian archipelago.
+                  captivating island of Ya&apos;Hota, renowned as the crown
+                  jewel of the Hawaiian archipelago.
                 </div>
                 <div
                   className="pb-5 text-base w-full xl:text-3xl pr-3 lh leading-relaxed text-ubigray"
@@ -313,10 +325,10 @@ export default function Home() {
                   participate in high-octane street races amidst the bustling
                   streets of Honolulu, test your off-road prowess on the rugged
                   slopes of a volcano, or perfect your cornering skills on race
-                  tracks. When it's time to unwind, recline on the sun-kissed
-                  beaches while behind the wheel of your preferred supercar, or
-                  opt for a buggy to navigate the hidden trails of the lush
-                  rainforest.
+                  tracks. When it&apos;s time to unwind, recline on the
+                  sun-kissed beaches while behind the wheel of your preferred
+                  supercar, or opt for a buggy to navigate the hidden trails of
+                  the lush rainforest.
                 </div>
                 <div>
                   <Link className="inline-block btnparent" href="#">
@@ -329,6 +341,7 @@ export default function Home() {
               <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
                 <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full -rotate-2 ">
                   <Image
+                    alt=""
                     className="border-8 border-slate-200"
                     style={{
                       boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
@@ -367,7 +380,7 @@ export default function Home() {
                   From its initial release and into the future, The ROCKER™
                   Motorbiker will continuously present ample chances for you to
                   showcase your expertise, express your individuality, and etch
-                  your legacy into the annals of the festival's history.
+                  your legacy into the annals of the festival&apos;s history.
                 </div>
                 <div>
                   <Link className="inline-block btnparent" href="#">
@@ -391,6 +404,7 @@ export default function Home() {
           <div className="text-slate-50">
             <div className="w-full h-1/2 bg-white">
               <Image
+                alt=""
                 src="/bg-live.svg"
                 className="w-full"
                 width={2000}
@@ -406,6 +420,7 @@ export default function Home() {
               <div className=" w-10/12 mb-5 h-1/5 sm:ml-5 ">
                 <div className="relative pb-4 w-full h-40 sm:h-30 ">
                   <Image
+                    alt=""
                     className="border-4 border-slate-200 "
                     style={{
                       boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
@@ -423,6 +438,7 @@ export default function Home() {
               <div className=" w-10/12 mb-5 h-1/5 sm:ml-5 ">
                 <div className="relative pb-4 w-full h-40 sm:h-30 ">
                   <Image
+                    alt=""
                     className="border-4 border-slate-200 "
                     style={{
                       boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
@@ -439,6 +455,7 @@ export default function Home() {
               <div className=" w-10/12 mb-5 h-1/5 sm:ml-5 ">
                 <div className="relative pb-4 w-full h-40 sm:h-30 ">
                   <Image
+                    alt=""
                     className="border-4 border-slate-200 "
                     style={{
                       boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
@@ -456,6 +473,7 @@ export default function Home() {
               <div className=" w-10/12 mb-5 h-1/5 sm:ml-5 ">
                 <div className="relative pb-4 w-full h-40 sm:h-30 ">
                   <Image
+                    alt=""
                     className="border-4 border-slate-200 "
                     style={{
                       boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
@@ -473,6 +491,7 @@ export default function Home() {
             </div>
             <div className="w-full h-1/2 bg-white">
               <Image
+                alt=""
                 src="/bg-live2.svg"
                 className="w-full"
                 width={2000}
@@ -496,6 +515,7 @@ export default function Home() {
               <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
                 <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full rotate-2">
                   <Image
+                    alt=""
                     className="border-8 border-slate-200"
                     style={{ boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)" }}
                     src="/HAVEN FOR CAR LOVERS.png"
