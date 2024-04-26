@@ -9,7 +9,7 @@ export default function Home() {
           <video
             autoPlay
             muted
-            // loop
+            loop
             src="vid1.mp4"
             className=" h-full object-cover w-full"
           ></video>
@@ -19,7 +19,6 @@ export default function Home() {
           <div className="w-2/3  lg:w-1/3  sm:w-1/3 ">
             <Image src={"/logovid.png"} width={2000} height={2000}></Image>
           </div>
-
           <div
             className="text-white text-lg font-bold"
             style={{ fontFamily: "DIN-CondBlack,sans-serif" }}
@@ -27,27 +26,34 @@ export default function Home() {
             Rocket : MotorBiker
           </div>
           <br />
-          <div className="text-white text-lg mb-5">AVAILABLE NOW</div>
-
+          <div className="text-white text-lg font-bold">AVAILABLE NOW</div>
           <Link className="btnparent" href="#">
             <span className="btn">BUY NOW</span>
           </Link>
+          <div className="flex arrowcont pt-5">
+            <div
+              className="arrow text-white text-lg font-bold"
+              style={{
+                fontFamily: "DIN-CondBlack,sans-serif",
+              }}
+            ></div>
+            <div>FREE TRIAL</div>
+          </div>
         </div>
       </div>
       <div
-      // style={{
-      //   backgroundImage: "url(bg-yellow-ticket.jpg)",
-      //   backgroundSize: "100% 100%",
-      //   // backgroundPositionY: "30%",
-      //   // backgroundPosition: "center 50%",
-      //   backgroundRepeat: "no-repeat",
-      // }}
+        style={{
+          backgroundImage: "url(bg.jpg)",
+          backgroundSize: "100% 90%",
+          backgroundPosition: "bottom",
+          backgroundRepeat: "no-repeat",
+        }}
       >
         <div
           style={{
             backgroundImage: "url(bg2.png), url(bg2.png)",
             backgroundPosition: "top right, top left",
-            // backgroundPositionY: "0%",
+            backgroundPositionY: "30%",
             backgroundSize: "30% 30%",
             backgroundRepeat: "no-repeat",
           }}
@@ -62,8 +68,8 @@ export default function Home() {
             ></Image>
           </div>
           <div className="flex flex-col sm:flex-row pl-10 pr-10 sm:pl-32 sm:pr-32 sm:items-center">
-            <div className="relative border w-full h-20 sm:w-full sm:h-60 sm:pr-10">
-              <div className="relative mt-5 w-full h-full -rotate-2 ">
+            <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
+              <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full -rotate-2 ">
                 <Image
                   className="border-8 border-slate-200"
                   style={{ boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)" }}
@@ -72,12 +78,12 @@ export default function Home() {
                 ></Image>
               </div>
             </div>
-            <div className=" flex justify-center flex-col border-2 pb-20 w-full sm:h-99">
-              <div className="text-4xl w-full pt-5 pb-5 font-bold">
+            <div className="sm:pl-5 flex justify-center flex-col pb-20 w-full sm:h-99">
+              <div className="text-4xl xl:text-6xl w-full pt-5 pb-5 font-bold">
                 IT'S SHOWTIME IN ROCKET
               </div>
               <div
-                className="pb-5 text-base w-full pr-3 lh leading-relaxed text-ubigray"
+                className="pb-5 text-base w-full xl:text-3xl pr-3 lh leading-relaxed text-ubigray"
                 style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
               >
                 The Motorbiker arrives at Rocket with fresh playlists,
@@ -86,8 +92,8 @@ export default function Home() {
                 inspired by classic films and television series.
               </div>
               <div>
-                <Link className="btnparent" href="#">
-                  <span className="btn">BUY NOW</span>
+                <Link className="inline-block btnparent" href="#">
+                  <span className="btn">LEARN MORE</span>
                 </Link>
               </div>
             </div>
@@ -105,28 +111,35 @@ export default function Home() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div
-        // style={{
-        //   backgroundImage: "url(bg2.png), url(bg2.png)",
-        //   backgroundPosition: "top right, top left",
-        //   backgroundPositionY: "0%",
-        //   backgroundSize: "20% 20%",
-        //   backgroundRepeat: "no-repeat",
-        // }}
-        >
+        <div>
           <div className="w-full h-1/2 bg-white">
             <Image
               src="/bg-black-leftright.svg"
               width={2000}
               height={2000}
+              className="w-full"
             ></Image>
           </div>
-          <div className="flex flex-col sm:flex-row">
-            <div className="border-2 pb-20">
-              <div className="text-4xl w-11/12 pt-5 pb-5 font-bold text-slate-50">
+          <div className="flex flex-col sm:flex-row-reverse pl-10 pr-10 sm:pl-32 sm:pr-32 sm:items-center">
+            <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
+              <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full -rotate-2 ">
+                <div className="playbtn absolute w-16 h-16 -rotate-2 "></div>
+                <Image
+                  className="border-8 border-slate-200"
+                  style={{ boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)" }}
+                  src="/Trailer.png"
+                  fill
+                ></Image>
+              </div>
+            </div>
+            <div className="sm:pl-5 sm:mt-5 text-slate-50 flex justify-center flex-col pb-20 w-full sm:h-99">
+              <div className="text-4xl xl:text-6xl w-full pt-5 pb-5 font-bold">
                 Check out the reviews from critics on The Rocket Motorbiker!
               </div>
-              <div className="pb-5 text-xs w-11/12 pr-3 lh leading-loose text-slate-50">
+              <div
+                className="pb-5 text-base w-full xl:text-3xl pr-3 lh leading-relaxed"
+                style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
+              >
                 Secure your pass and be part of a year-long celebration tailored
                 for automobile enthusiasts of all kinds: Embark on an adventure
                 through a lively Hawaiian open-world, situated on the
@@ -136,67 +149,62 @@ export default function Home() {
                 cooperatively or compete against them in demanding PvP modes,
                 accommodating up to 32 players.
               </div>
-              <Link className="btnparent" href="#">
-                <span className="btn">BUY NOW</span>
-              </Link>
-            </div>
-            <div className="border sm:pr-0">
-              <div className=" -rotate-2 ">
-                <div className="playbtn absolute w-16 h-16 -rotate-2 "></div>
-                <Image
-                  className="border-8 border-slate-200 "
-                  style={{
-                    boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
-                  }}
-                  src="/Trailer.png"
-                  width={2000}
-                  height={2000}
-                ></Image>
+              <div>
+                <Link className="inline-block btnparent" href="#">
+                  <span className="btn">BUY NOW</span>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div>
-        <div className="h-60 sm:h-80">
-          <div className="relative sm:h-75  h-35 text-center">
-            <div className="w-full rotate-180">
-              <Image
-                src="/bg-black-leftright.svg"
-                width={2000}
-                height={2000}
-              ></Image>
+      <div className="sm:h-106 xl:h-115 h-60">
+        <div
+          className=" sm:bg-[length:100%_10%] bg-[length:100%_3%] sm:h-110 relative text-center"
+          style={{
+            backgroundImage: "url(bg-black-bottom.png)",
+            backgroundPosition: "top",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div
+            // style={{ maskImage: "url(wallpaper.svg)"}}
+            className="relative z-11 h-30 sm:h-full"
+          >
+            <Image
+              className=" h-full w-full"
+              src="/MororBiker Wallpaper.png"
+              fill
+            ></Image>
+          </div>
+          <div className="relative z-11 h-30 sm:h-full">
+            <Image className=" h-full w-full" src="/bg.jpg" fill></Image>
+          </div>
+          <div className="absolute mt-10 sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 left-1/5 bottom-16">
+            <div className="sm:text-slate-50 font-bold text-2xl sm:text-5xl pb-5">
+              WELCOME TO MOTORFEST
             </div>
-            <div className="relative  z-11 -top-10 h-full">
-              <Image className="" src="/MororBiker Wallpaper.png" fill></Image>
-              asd
-            </div>
-            <div className="sm:absolute top-1/2">
-              <div className="sm:text-slate-50 font-bold sm:text-5xl pb-5">
-                WELCOME TO MOTORFEST
-              </div>
-              <div className="sm:text-slate-50 font-bold sm:text-xl">
-                GET YOUR TICKET FOR AN ALL-YEAR-ROUND FESTIVAL DESIGNED FOR ALL
-                CAR ENTHUSIASTS ON THE BEAUTIFUL ISLAND OF O'AHU.
-              </div>
+            <div className="sm:text-slate-50 font-bold sm:text-xl">
+              Secure your admission to a year-long festival crafted for car
+              enthusiasts of all kinds, located on the stunning island of
+              Ya'Hota.
             </div>
           </div>
         </div>
       </div>
-      <div>
+      <div className="relative">
         <div
           style={{
             backgroundImage: "url(bg1.jpg)",
             textAlign: "center",
           }}
         >
-          <div className="p-10">
+          <div className="p-10 relative">
             <div
-              className="text-2xl"
+              className="text-3xl absolute top-0 left-1/2 p-5 -translate-x-1/2 xl:text-4xl sm:text-2xl bold "
               style={{
                 backgroundImage: "url(bg-yellowtxt.png)",
-                backgroundSize: "50% 200%",
-                backgroundPositionX: "50%",
+                backgroundSize: "100% 100%",
                 backgroundRepeat: "no-repeat",
               }}
             >
@@ -211,97 +219,86 @@ export default function Home() {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <div>
-              <div className="flex flex-col sm:flex-row sm:items-center">
-                <div className="border sm:pr-0">
-                  <div className="w-11/12 h-4/5  mt-5 -rotate-2 ">
-                    <Image
-                      className="border-8 border-slate-200"
-                      style={{
-                        boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
-                        borderImage:
-                          "linear-gradient(90deg,#ff1c38 75%,#bcff56) 10",
-                      }}
-                      src="/MororBiker Wallpaper 02.png"
-                      width={2000}
-                      height={2000}
-                    ></Image>
-                  </div>
+            <div className="flex flex-col sm:flex-row pl-10 pr-10 sm:pl-32 sm:pr-32 sm:items-center">
+              <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
+                <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full -rotate-2 ">
+                  <Image
+                    className="border-8 border-slate-200"
+                    style={{
+                      boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
+                      borderImage:
+                        "linear-gradient(90deg,#ff1c38 75%,#bcff56) 10",
+                    }}
+                    src="/MororBiker Wallpaper 02.png"
+                    fill
+                  ></Image>
+                </div>
+              </div>
+              <div
+                className="sm:pl-5 pt-10 flex justify-center flex-col pb-20 w-full sm:h-99"
+                style={{
+                  backgroundImage: " url(bg-redtxt2.png),url(bg-yellowtxt.png)",
+                  backgroundSize: "39% 9%, 100% 16%",
+                  backgroundPositionX: "0%, 0%",
+                  backgroundPositionY: "5% , 16%",
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
+                <div className="text-3xl xl:text-4xl sm:text-2xl w-full pt-5 pb-5 font-bold">
+                  EXPLORE EVERY ASPECT OF CAR CULTURE
                 </div>
                 <div
-                  className="border-2 pb-20"
-                  style={{
-                    backgroundImage:
-                      " url(bg-redtxt2.png),url(bg-yellowtxt.png)",
-                    backgroundSize: "25% 7%, 90% 30%",
-                    backgroundPositionX: "0%, 0%",
-                    backgroundPositionY: "0% , 0%",
-                    backgroundRepeat: "no-repeat",
-                  }}
+                  className="pb-5 text-base w-full xl:text-3xl pr-3 lh leading-relaxed text-ubigray"
+                  style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
                 >
-                  <div className="text-4xl w-11/12 pt-5 pb-5 font-bold">
-                    EXPLORE EVERY ASPECT OF CAR CULTURE
-                  </div>
-                  <div
-                    className="pb-5 text-base w-11/12 pr-3 lh leading-relaxed text-ubigray"
-                    style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
-                  >
-                    Introducing the Playlists: a collection of brief thematic
-                    campaigns presenting distinctive and thrilling car culture
-                    encounters. Each playlist is meticulously crafted to plunge
-                    you into a distinct car culture realm, featuring customized
-                    races, themed events, and other distinctive challenges.
-                    Whether you're honing your skills in vintage classics or
-                    electric supercars, aiming to dominate the racetrack, or
-                    simply enjoying a leisurely cruise with friends, there's a
-                    playlist tailored to suit your preferences.
-                  </div>
+                  Introducing the Playlists: a collection of brief thematic
+                  campaigns presenting distinctive and thrilling car culture
+                  encounters. Each playlist is meticulously crafted to plunge
+                  you into a distinct car culture realm, featuring customized
+                  races, themed events, and other distinctive challenges.
+                  Whether you're honing your skills in vintage classics or
+                  electric supercars, aiming to dominate the racetrack, or
+                  simply enjoying a leisurely cruise with friends, there's a
+                  playlist tailored to suit your preferences.
+                </div>
+                <div>
+                  <Link className="inline-block btnparent" href="#">
+                    <span className="btn">BUY NOW</span>
+                  </Link>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div
-          style={{
-            backgroundImage: "url(bg.jpg)",
-            backgroundSize: "100% 90%",
-            backgroundPosition: "center 50%",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div>
-            <div className="flex flex-col sm:flex-row-reverse sm:items-center">
-              <div className="border sm:pr-0">
-                <div className="w-11/12 h-4/5  mt-5 rotate-2 ">
+            <div className="flex flex-col sm:flex-row-reverse pl-10 pr-10 sm:pl-32 sm:pr-32 sm:items-center">
+              <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
+                <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full rotate-2 ">
                   <Image
-                    className="border-8 "
+                    className="border-8 border-slate-200"
                     style={{
                       boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
                       borderImage:
                         "linear-gradient(90deg,#ff1c38 75%,#bcff56) 10",
                     }}
                     src="/EMBARK ON AN EXHILARATING.png"
-                    width={2000}
-                    height={2000}
+                    fill
                   ></Image>
                 </div>
               </div>
               <div
-                className="border-2 pb-20"
+                className="sm:pl-5 pt-10 flex justify-center flex-col pb-20 w-full sm:h-99"
                 style={{
                   backgroundImage: " url(bg-redtxt1.png),url(bg-yellowtxt.png)",
-                  backgroundSize: "25% 7%, 90% 30%",
+                  backgroundSize: "39% 9%, 100% 16%",
                   backgroundPositionX: "0%, 0%",
-                  backgroundPositionY: "0% , 0%",
+                  backgroundPositionY: "5% , 16%",
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                <div className="text-4xl w-11/12 pt-5 pb-5 font-bold">
+                <div className="text-2xl xl:text-4xl sm:text-2xl w-full pt-5 pb-5 font-bold">
                   EMBARK ON AN EXHILARATING JOURNEY THROUGH THE VIBRANT HAWAIIAN
                   OPEN WORLD ALONGSIDE YOUR ROCKET
                 </div>
                 <div
-                  className="pb-5 text-base w-11/12 pr-3 lh leading-relaxed text-ubigray"
+                  className="pb-5 text-base w-full xl:text-3xl pr-3 lh leading-relaxed text-ubigray"
                   style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
                 >
                   Prepare yourself for the ultimate driving escapade on the
@@ -309,7 +306,7 @@ export default function Home() {
                   the Hawaiian archipelago.
                 </div>
                 <div
-                  className="pb-5 text-base w-11/12 pr-3 lh leading-relaxed text-ubigray"
+                  className="pb-5 text-base w-full xl:text-3xl pr-3 lh leading-relaxed text-ubigray"
                   style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
                 >
                   Engage in various activities solo or with fellow players:
@@ -321,22 +318,16 @@ export default function Home() {
                   opt for a buggy to navigate the hidden trails of the lush
                   rainforest.
                 </div>
+                <div>
+                  <Link className="inline-block btnparent" href="#">
+                    <span className="btn">BUY NOW</span>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div
-          style={{
-            backgroundImage: "url(bg.jpg)",
-            backgroundSize: "100% 90%",
-            backgroundPosition: "center 50%",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
-          <div>
-            <div className="flex flex-col sm:flex-row sm:items-center">
-              <div className="border sm:pr-0">
-                <div className="w-11/12 h-4/5  mt-5 -rotate-2 ">
+            <div className="flex flex-col sm:flex-row pl-10 pr-10 sm:pl-32 sm:pr-32 sm:items-center">
+              <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
+                <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full -rotate-2 ">
                   <Image
                     className="border-8 border-slate-200"
                     style={{
@@ -345,28 +336,27 @@ export default function Home() {
                         "linear-gradient(90deg,#ff1c38 75%,#bcff56) 10",
                     }}
                     src="/HAVEN FOR CAR LOVERS.png"
-                    width={2000}
-                    height={2000}
+                    fill
                   ></Image>
                 </div>
               </div>
               <div
-                className="border-2 pb-20"
+                className="sm:pl-5 pt-10 flex justify-center flex-col pb-20 w-full sm:h-99"
                 style={{
                   backgroundImage:
                     " url(bg-redtxt3.png),url(bg-yellowtxt3.png)",
-                  backgroundSize: "25% 7%, 90% 30%",
+                  backgroundSize: "39% 9%, 100% 16%",
                   backgroundPositionX: "0%, 0%",
-                  backgroundPositionY: "0% , 0%",
+                  backgroundPositionY: "5% , 16%",
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                <div className="text-4xl w-11/12 pt-5 pb-5 font-bold">
+                <div className="text-3xl xl:text-4xl sm:text-2xl w-full pt-5 pb-5 font-bold">
                   ENGAGE IN MOTORBIKER, A CONSTANTLY EVOLVING PARADISE FOR AUTO
                   ENTHUSIASTS
                 </div>
                 <div
-                  className="pb-5 text-base w-11/12 pr-3 lh leading-relaxed text-ubigray"
+                  className="pb-5 text-base w-full xl:text-3xl pr-3 lh leading-relaxed text-ubigray"
                   style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
                 >
                   Immerse yourself in a dynamic lineup of events: explore fresh
@@ -379,6 +369,11 @@ export default function Home() {
                   showcase your expertise, express your individuality, and etch
                   your legacy into the annals of the festival's history.
                 </div>
+                <div>
+                  <Link className="inline-block btnparent" href="#">
+                    <span className="btn">BUY NOW</span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -387,8 +382,6 @@ export default function Home() {
       <div>
         <div
           style={{
-            // backgroundImage: "url(bg-black2.png), url(bg-black.png)",
-
             backgroundColor: "#292929",
             backgroundSize: "100% 30%",
             backgroundPosition: "top, bottom",
@@ -397,7 +390,12 @@ export default function Home() {
         >
           <div className="text-slate-50">
             <div className="w-full h-1/2 bg-white">
-              <Image src="/bg-live.svg" width={2000} height={2000}></Image>
+              <Image
+                src="/bg-live.svg"
+                className="w-full"
+                width={2000}
+                height={2000}
+              ></Image>
             </div>
             <div className="pt-5 pb-20">
               <div className="text-4xl w-11/12 pt-5 pb-5 font-bold text-center text-slate-50">
@@ -474,41 +472,50 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full h-1/2 bg-white">
-              <Image src="/bg-live2.svg" width={2000} height={2000}></Image>
+              <Image
+                src="/bg-live2.svg"
+                className="w-full"
+                width={2000}
+                height={2000}
+              ></Image>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center pt-5 pb-5">
+        <div className="flex justify-center ml-2 mr-2 pt-5 pb-5">
           <div
             style={{
-              border: "50px solid transparent",
+              border: "30px solid transparent",
               borderImage: "url(border-ticket.png)",
               borderImageSlice: "40",
               backgroundImage: "url(bg-yellow-ticket.jpg)",
             }}
-            className="w-11/12 h-75 text-center rotate-2"
+            className="w-11/12 sm:h-106 xl:h-90 text-center -rotate-2"
           >
-            <div className="flex items-center flex-col sm:flex-row-reverse">
-              <div className="w-11/12 mt-5 -rotate-2 sm:w-full ">
-                <Image
-                  className="border-8 border-slate-200"
-                  style={{
-                    boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
-                    // borderImage:
-                    //   "linear-gradient(90deg,#ff1c38 75%,#bcff56) 10",
-                  }}
-                  src="/HAVEN FOR CAR LOVERS.png"
-                  width={2000}
-                  height={2000}
-                ></Image>
+            <div className="flex flex-col sm:flex-row-reverse pl-1 pr-1 sm:pl-10 sm:pr-10  ">
+              <div className="relative w-full h-20 sm:w-full sm:h-60 sm:pr-10">
+                <div className="relative mt-5 w-full h-full sm:h-3/4 xl:h-full rotate-2">
+                  <Image
+                    className="border-8 border-slate-200"
+                    style={{ boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)" }}
+                    src="/HAVEN FOR CAR LOVERS.png"
+                    fill
+                  ></Image>
+                </div>
               </div>
-              <div className="">
-                <div className="text-2xl pt-5 pb-5 font-bold">
+              <div
+                className="sm:pl-5 flex text-left justify-center flex-col pb-20 w-full sm:h-99 [background-position-x:93%] [background-position-y:82%]  sm:[background-position-x:100%] sm:[background-position-y:75%] xl:[background-position-x:50%] xl:[background-position-y:70%]"
+                style={{
+                  backgroundImage: " url(arrow.png)",
+                  backgroundSize: "34% 7%",
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
+                <div className="text-4xl xl:text-6xl w-full pt-5 pb-5 font-bold">
                   EXPERIENCE THE THRILL OF THE ROCKET MOTORBIKER
                 </div>
                 <div
-                  className="pb-5 text-base pr-3 leading-relaxed text-ubigray"
+                  className="pb-5 text-base w-full xl:text-3xl pr-3 lh leading-relaxed text-ubigray"
                   style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
                 >
                   Purchase The RocketMotorbiker today and become a part of the
@@ -516,9 +523,11 @@ export default function Home() {
                   PlayStation®5, PlayStation®4, Xbox Series X|S, Xbox One, and
                   PC, AppStore, playstore or via a AnrexStore subscription.
                 </div>
-                <Link className="btnparent" href="#">
-                  <span className="btn">BUY NOW</span>
-                </Link>
+                <div>
+                  <Link className="inline-block btnparent" href="#">
+                    <span className="btn">BUY NOW</span>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

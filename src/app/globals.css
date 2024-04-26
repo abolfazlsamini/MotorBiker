@@ -7,10 +7,30 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+.arrowcont {
+  color: #ff1c38;
+  transition: 0.2s ease-in;
+}
+.arrowcont:hover {
+  color: #bcff56;
+  cursor: pointer;
+}
+.arrowcont:hover .arrow {
+  background-color: #bcff56;
+}
+.arrow {
+  mask-image: url("../../public/arrow.svg");
+  background-color: #ff1c38;
+  width: 30px;
+  height: 30px;
+  content: "";
+}
 .playbtn {
   background: url("../../public/play.svg");
-  top: 40%;
-  left: 45%;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .playbtn:hover {
   background: url("../../public/playhover.svg");
