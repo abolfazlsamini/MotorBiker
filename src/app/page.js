@@ -1,113 +1,529 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div>
+      <div className="relative h-78 lg:h-75">
+        <div className="absolute h-105 z-11 w-full lg:h-110">
+          <video
+            autoPlay
+            muted
+            // loop
+            src="vid1.mp4"
+            className=" h-full object-cover w-full"
+          ></video>
+        </div>
+
+        <div className="flex items-center justify-center flex-col h-full">
+          <div className="w-2/3  lg:w-1/3  sm:w-1/3 ">
+            <Image src={"/logovid.png"} width={2000} height={2000}></Image>
+          </div>
+
+          <div
+            className="text-white text-lg font-bold"
+            style={{ fontFamily: "DIN-CondBlack,sans-serif" }}
           >
-            By{" "}
+            Rocket : MotorBiker
+          </div>
+          <br />
+          <div className="text-white text-lg mb-5">AVAILABLE NOW</div>
+
+          <Link className="btnparent" href="#">
+            <span className="btn">BUY NOW</span>
+          </Link>
+        </div>
+      </div>
+      <div
+      // style={{
+      //   backgroundImage: "url(bg-yellow-ticket.jpg)",
+      //   backgroundSize: "100% 100%",
+      //   // backgroundPositionY: "30%",
+      //   // backgroundPosition: "center 50%",
+      //   backgroundRepeat: "no-repeat",
+      // }}
+      >
+        <div
+          style={{
+            backgroundImage: "url(bg2.png), url(bg2.png)",
+            backgroundPosition: "top right, top left",
+            // backgroundPositionY: "0%",
+            backgroundSize: "30% 30%",
+            backgroundRepeat: "no-repeat",
+          }}
+          className="[background-position-y:0%] sm:[background-position-y:15%] md:[background-position-y:20%] "
+        >
+          <div className="w-full h-1/2 ">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+              className="w-full"
+              src="1.svg"
+              width={2000}
+              height={2000}
+            ></Image>
+          </div>
+          <div className="flex flex-col sm:flex-row pl-10 pr-10 sm:pl-32 sm:pr-32 sm:items-center">
+            <div className="relative border w-full h-20 sm:w-full sm:h-60 sm:pr-10">
+              <div className="relative mt-5 w-full h-full -rotate-2 ">
+                <Image
+                  className="border-8 border-slate-200"
+                  style={{ boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)" }}
+                  src="/Motorbiker Home 01.png"
+                  fill
+                ></Image>
+              </div>
+            </div>
+            <div className=" flex justify-center flex-col border-2 pb-20 w-full sm:h-99">
+              <div className="text-4xl w-full pt-5 pb-5 font-bold">
+                IT'S SHOWTIME IN ROCKET
+              </div>
+              <div
+                className="pb-5 text-base w-full pr-3 lh leading-relaxed text-ubigray"
+                style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
+              >
+                The Motorbiker arrives at Rocket with fresh playlists,
+                additional events, and brand-new vehicles! Demonstrate your
+                prowess as a Hollywood stunt driver in action-packed sequences
+                inspired by classic films and television series.
+              </div>
+              <div>
+                <Link className="btnparent" href="#">
+                  <span className="btn">BUY NOW</span>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div
+        style={{
+          backgroundImage: "url(bg-black2.png), url(bg-black.png)",
+
+          backgroundColor: "#292929",
+          backgroundSize: "100% 30%",
+          backgroundPosition: "top, bottom",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div
+        // style={{
+        //   backgroundImage: "url(bg2.png), url(bg2.png)",
+        //   backgroundPosition: "top right, top left",
+        //   backgroundPositionY: "0%",
+        //   backgroundSize: "20% 20%",
+        //   backgroundRepeat: "no-repeat",
+        // }}
+        >
+          <div className="w-full h-1/2 bg-white">
+            <Image
+              src="/bg-black-leftright.svg"
+              width={2000}
+              height={2000}
+            ></Image>
+          </div>
+          <div className="flex flex-col sm:flex-row">
+            <div className="border-2 pb-20">
+              <div className="text-4xl w-11/12 pt-5 pb-5 font-bold text-slate-50">
+                Check out the reviews from critics on The Rocket Motorbiker!
+              </div>
+              <div className="pb-5 text-xs w-11/12 pr-3 lh leading-loose text-slate-50">
+                Secure your pass and be part of a year-long celebration tailored
+                for automobile enthusiasts of all kinds: Embark on an adventure
+                through a lively Hawaiian open-world, situated on the
+                picturesque island of Ya'Hota. Acquire a vast collection of over
+                600 vehicles, ranging from cars and boats to planes and bikes.
+                Form alliances with your friends to traverse the world
+                cooperatively or compete against them in demanding PvP modes,
+                accommodating up to 32 players.
+              </div>
+              <Link className="btnparent" href="#">
+                <span className="btn">BUY NOW</span>
+              </Link>
+            </div>
+            <div className="border sm:pr-0">
+              <div className=" -rotate-2 ">
+                <div className="playbtn absolute w-16 h-16 -rotate-2 "></div>
+                <Image
+                  className="border-8 border-slate-200 "
+                  style={{
+                    boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
+                  }}
+                  src="/Trailer.png"
+                  width={2000}
+                  height={2000}
+                ></Image>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div>
+        <div className="h-60 sm:h-80">
+          <div className="relative sm:h-75  h-35 text-center">
+            <div className="w-full rotate-180">
+              <Image
+                src="/bg-black-leftright.svg"
+                width={2000}
+                height={2000}
+              ></Image>
+            </div>
+            <div className="relative  z-11 -top-10 h-full">
+              <Image className="" src="/MororBiker Wallpaper.png" fill></Image>
+              asd
+            </div>
+            <div className="sm:absolute top-1/2">
+              <div className="sm:text-slate-50 font-bold sm:text-5xl pb-5">
+                WELCOME TO MOTORFEST
+              </div>
+              <div className="sm:text-slate-50 font-bold sm:text-xl">
+                GET YOUR TICKET FOR AN ALL-YEAR-ROUND FESTIVAL DESIGNED FOR ALL
+                CAR ENTHUSIASTS ON THE BEAUTIFUL ISLAND OF O'AHU.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </main>
+      <div>
+        <div
+          style={{
+            backgroundImage: "url(bg1.jpg)",
+            textAlign: "center",
+          }}
+        >
+          <div className="p-10">
+            <div
+              className="text-2xl"
+              style={{
+                backgroundImage: "url(bg-yellowtxt.png)",
+                backgroundSize: "50% 200%",
+                backgroundPositionX: "50%",
+                backgroundRepeat: "no-repeat",
+              }}
+            >
+              KEY HIGHLIGHTS
+            </div>
+          </div>
+          <div
+            style={{
+              backgroundImage: "url(bg.jpg)",
+              backgroundSize: "100% 90%",
+              backgroundPosition: "center 50%",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-center">
+                <div className="border sm:pr-0">
+                  <div className="w-11/12 h-4/5  mt-5 -rotate-2 ">
+                    <Image
+                      className="border-8 border-slate-200"
+                      style={{
+                        boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
+                        borderImage:
+                          "linear-gradient(90deg,#ff1c38 75%,#bcff56) 10",
+                      }}
+                      src="/MororBiker Wallpaper 02.png"
+                      width={2000}
+                      height={2000}
+                    ></Image>
+                  </div>
+                </div>
+                <div
+                  className="border-2 pb-20"
+                  style={{
+                    backgroundImage:
+                      " url(bg-redtxt2.png),url(bg-yellowtxt.png)",
+                    backgroundSize: "25% 7%, 90% 30%",
+                    backgroundPositionX: "0%, 0%",
+                    backgroundPositionY: "0% , 0%",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
+                  <div className="text-4xl w-11/12 pt-5 pb-5 font-bold">
+                    EXPLORE EVERY ASPECT OF CAR CULTURE
+                  </div>
+                  <div
+                    className="pb-5 text-base w-11/12 pr-3 lh leading-relaxed text-ubigray"
+                    style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
+                  >
+                    Introducing the Playlists: a collection of brief thematic
+                    campaigns presenting distinctive and thrilling car culture
+                    encounters. Each playlist is meticulously crafted to plunge
+                    you into a distinct car culture realm, featuring customized
+                    races, themed events, and other distinctive challenges.
+                    Whether you're honing your skills in vintage classics or
+                    electric supercars, aiming to dominate the racetrack, or
+                    simply enjoying a leisurely cruise with friends, there's a
+                    playlist tailored to suit your preferences.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            backgroundImage: "url(bg.jpg)",
+            backgroundSize: "100% 90%",
+            backgroundPosition: "center 50%",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div>
+            <div className="flex flex-col sm:flex-row-reverse sm:items-center">
+              <div className="border sm:pr-0">
+                <div className="w-11/12 h-4/5  mt-5 rotate-2 ">
+                  <Image
+                    className="border-8 "
+                    style={{
+                      boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
+                      borderImage:
+                        "linear-gradient(90deg,#ff1c38 75%,#bcff56) 10",
+                    }}
+                    src="/EMBARK ON AN EXHILARATING.png"
+                    width={2000}
+                    height={2000}
+                  ></Image>
+                </div>
+              </div>
+              <div
+                className="border-2 pb-20"
+                style={{
+                  backgroundImage: " url(bg-redtxt1.png),url(bg-yellowtxt.png)",
+                  backgroundSize: "25% 7%, 90% 30%",
+                  backgroundPositionX: "0%, 0%",
+                  backgroundPositionY: "0% , 0%",
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
+                <div className="text-4xl w-11/12 pt-5 pb-5 font-bold">
+                  EMBARK ON AN EXHILARATING JOURNEY THROUGH THE VIBRANT HAWAIIAN
+                  OPEN WORLD ALONGSIDE YOUR ROCKET
+                </div>
+                <div
+                  className="pb-5 text-base w-11/12 pr-3 lh leading-relaxed text-ubigray"
+                  style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
+                >
+                  Prepare yourself for the ultimate driving escapade on the
+                  captivating island of Ya'Hota, renowned as the crown jewel of
+                  the Hawaiian archipelago.
+                </div>
+                <div
+                  className="pb-5 text-base w-11/12 pr-3 lh leading-relaxed text-ubigray"
+                  style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
+                >
+                  Engage in various activities solo or with fellow players:
+                  participate in high-octane street races amidst the bustling
+                  streets of Honolulu, test your off-road prowess on the rugged
+                  slopes of a volcano, or perfect your cornering skills on race
+                  tracks. When it's time to unwind, recline on the sun-kissed
+                  beaches while behind the wheel of your preferred supercar, or
+                  opt for a buggy to navigate the hidden trails of the lush
+                  rainforest.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            backgroundImage: "url(bg.jpg)",
+            backgroundSize: "100% 90%",
+            backgroundPosition: "center 50%",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div>
+            <div className="flex flex-col sm:flex-row sm:items-center">
+              <div className="border sm:pr-0">
+                <div className="w-11/12 h-4/5  mt-5 -rotate-2 ">
+                  <Image
+                    className="border-8 border-slate-200"
+                    style={{
+                      boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
+                      borderImage:
+                        "linear-gradient(90deg,#ff1c38 75%,#bcff56) 10",
+                    }}
+                    src="/HAVEN FOR CAR LOVERS.png"
+                    width={2000}
+                    height={2000}
+                  ></Image>
+                </div>
+              </div>
+              <div
+                className="border-2 pb-20"
+                style={{
+                  backgroundImage:
+                    " url(bg-redtxt3.png),url(bg-yellowtxt3.png)",
+                  backgroundSize: "25% 7%, 90% 30%",
+                  backgroundPositionX: "0%, 0%",
+                  backgroundPositionY: "0% , 0%",
+                  backgroundRepeat: "no-repeat",
+                }}
+              >
+                <div className="text-4xl w-11/12 pt-5 pb-5 font-bold">
+                  ENGAGE IN MOTORBIKER, A CONSTANTLY EVOLVING PARADISE FOR AUTO
+                  ENTHUSIASTS
+                </div>
+                <div
+                  className="pb-5 text-base w-11/12 pr-3 lh leading-relaxed text-ubigray"
+                  style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
+                >
+                  Immerse yourself in a dynamic lineup of events: explore fresh
+                  perspectives on car culture with an array of themed campaigns,
+                  adrenaline-fueled racing competitions, and diverse competitive
+                  live events. Amass a vast collection of iconic vehicles
+                  spanning the eras, from classic to contemporary and beyond.
+                  From its initial release and into the future, The ROCKER™
+                  Motorbiker will continuously present ample chances for you to
+                  showcase your expertise, express your individuality, and etch
+                  your legacy into the annals of the festival's history.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          style={{
+            // backgroundImage: "url(bg-black2.png), url(bg-black.png)",
+
+            backgroundColor: "#292929",
+            backgroundSize: "100% 30%",
+            backgroundPosition: "top, bottom",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="text-slate-50">
+            <div className="w-full h-1/2 bg-white">
+              <Image src="/bg-live.svg" width={2000} height={2000}></Image>
+            </div>
+            <div className="pt-5 pb-20">
+              <div className="text-4xl w-11/12 pt-5 pb-5 font-bold text-center text-slate-50">
+                LIVE GAME MODES
+              </div>
+            </div>
+            <div className="flex flex-col items-center sm:items-start sm:flex-row sm:align-top sm:pl-20 sm:pr-20">
+              <div className=" w-10/12 mb-5 h-1/5 sm:ml-5 ">
+                <div className="relative pb-4 w-full h-40 sm:h-30 ">
+                  <Image
+                    className="border-4 border-slate-200 "
+                    style={{
+                      boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
+                    }}
+                    src="/Epic Rally.png"
+                    fill
+                  ></Image>
+                </div>
+                <div>
+                  Join the high-speed, adrenaline-pumping races with up to 28
+                  players, where every man is for himself in the ultimate
+                  showdown at Motorbiker!
+                </div>
+              </div>
+              <div className=" w-10/12 mb-5 h-1/5 sm:ml-5 ">
+                <div className="relative pb-4 w-full h-40 sm:h-30 ">
+                  <Image
+                    className="border-4 border-slate-200 "
+                    style={{
+                      boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
+                    }}
+                    src="/PEAK CHALLENGE.png"
+                    fill
+                  ></Image>
+                </div>
+                <div>
+                  Compete in weekly ranked events and earn top rewards by
+                  climbing your way to the summit of the leaderboards.
+                </div>
+              </div>
+              <div className=" w-10/12 mb-5 h-1/5 sm:ml-5 ">
+                <div className="relative pb-4 w-full h-40 sm:h-30 ">
+                  <Image
+                    className="border-4 border-slate-200 "
+                    style={{
+                      boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
+                    }}
+                    src="/STYLE SHOWDOWN.png"
+                    fill
+                  ></Image>
+                </div>
+                <div>
+                  Show off your unique flair in the weekly custom show
+                  competitions and seize the opportunity to claim exclusive
+                  rewards
+                </div>
+              </div>
+              <div className=" w-10/12 mb-5 h-1/5 sm:ml-5 ">
+                <div className="relative pb-4 w-full h-40 sm:h-30 ">
+                  <Image
+                    className="border-4 border-slate-200 "
+                    style={{
+                      boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
+                    }}
+                    src="/WRECKAGE WARS.png"
+                    fill
+                  ></Image>
+                </div>
+                <div>
+                  32 players divided into 8 teams battle it out, with the last
+                  team standing emerging victorious in this intense demolition
+                  derby!
+                </div>
+              </div>
+            </div>
+            <div className="w-full h-1/2 bg-white">
+              <Image src="/bg-live2.svg" width={2000} height={2000}></Image>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center pt-5 pb-5">
+          <div
+            style={{
+              border: "50px solid transparent",
+              borderImage: "url(border-ticket.png)",
+              borderImageSlice: "40",
+              backgroundImage: "url(bg-yellow-ticket.jpg)",
+            }}
+            className="w-11/12 h-75 text-center rotate-2"
+          >
+            <div className="flex items-center flex-col sm:flex-row-reverse">
+              <div className="w-11/12 mt-5 -rotate-2 sm:w-full ">
+                <Image
+                  className="border-8 border-slate-200"
+                  style={{
+                    boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)",
+                    // borderImage:
+                    //   "linear-gradient(90deg,#ff1c38 75%,#bcff56) 10",
+                  }}
+                  src="/HAVEN FOR CAR LOVERS.png"
+                  width={2000}
+                  height={2000}
+                ></Image>
+              </div>
+              <div className="">
+                <div className="text-2xl pt-5 pb-5 font-bold">
+                  EXPERIENCE THE THRILL OF THE ROCKET MOTORBIKER
+                </div>
+                <div
+                  className="pb-5 text-base pr-3 leading-relaxed text-ubigray"
+                  style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
+                >
+                  Purchase The RocketMotorbiker today and become a part of the
+                  enduring celebration of automotive culture! Accessible on
+                  PlayStation®5, PlayStation®4, Xbox Series X|S, Xbox One, and
+                  PC, AppStore, playstore or via a AnrexStore subscription.
+                </div>
+                <Link className="btnparent" href="#">
+                  <span className="btn">BUY NOW</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
