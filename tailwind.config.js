@@ -38,12 +38,21 @@ module.exports = {
         110: "110%",
         115: "115vh",
       },
+      maxWidth: {
+        900: "900px",
+      },
+      padding: {
+        "1/5": "15%",
+      },
       backgroundColor: {
         ubired: "#ff1c38",
         ubiyellow: "#ffb52d",
         ubiblack: "#292929",
+        ubiblue: "#006ef5",
+        ubibluehover: "#1991ff",
       },
       textColor: {
+        ubiblue: "#006ef5",
         ubigray: "#292929",
       },
     },
