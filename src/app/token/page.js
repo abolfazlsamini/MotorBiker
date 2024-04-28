@@ -1,10 +1,13 @@
 "use client";
 import Image from "next/image";
+import Navbar from "../navbar";
+import Footer from "../footer";
 
 export default function Coins() {
   return (
     <>
       <title>Token</title>
+      <Navbar />
       <div className="justify-center  flex ">
         <div
           className="coins relative w-full"
@@ -105,6 +108,7 @@ export default function Coins() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

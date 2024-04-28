@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@media only screen and (min-width: 768px) {
+  .parent:hover .child {
+    opacity: 1;
+    height: auto;
+    overflow: none;
+    transform: translateY(0);
+  }
+  .child {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transform: translateY(-10%);
+  }
+}
+.footer {
+  background: linear-gradient(180deg, #0d0d0d, rgba(13, 13, 13, 0) 85.65%),
+    radial-gradient(
+      30.28% 113.82% at 26.49% 110.06%,
+      rgba(6, 195, 255, 0.2) 0,
+      rgba(0, 102, 255, 0) 100%
+    ),
+    radial-gradient(
+      28.44% 103.87% at -1.18% 105.47%,
+      rgba(97, 131, 129, 0.3) 0,
+      rgba(0, 199, 211, 0) 100%
+    ),
+    radial-gradient(
+      61.25% 146.44% at 100.8% 105.47%,
+      rgba(255, 0, 168, 0.3) 0,
+      rgba(192, 17, 70, 0) 100%
+    ),
+    radial-gradient(
+      44.72% 104.88% at 74.34% 104.88%,
+      rgba(0, 163, 255, 0.3) 0,
+      rgba(83, 3, 253, 0) 78.14%
+    ),
+    #0d0d0d;
+}
 @media (max-width: 640px) {
   .bg {
     background: url(https://ubistatic-a.ubisoft.com/0123/PROD/_next/static/images/unit-left-mobile-1-ed159ed9b74e40c50f3f81ec6c43fc4f.png)

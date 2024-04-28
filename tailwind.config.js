@@ -18,6 +18,8 @@ module.exports = {
       colors: {
         ubired: "#ff1c38",
         ubiyellow: "ffb52d",
+        terms: "#d6d6d6",
+        ubigray: "#121212",
       },
       zIndex: {
         11: "-1",
