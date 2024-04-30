@@ -20,6 +20,8 @@ module.exports = {
         ubiyellow: "ffb52d",
         terms: "#d6d6d6",
         ubigray: "#121212",
+        ubiblue: "#007aff",
+        ubiwhite: "#f2f2f2",
       },
       zIndex: {
         11: "-1",
@@ -29,6 +31,7 @@ module.exports = {
         20: "20vh",
         30: "30vh",
         35: "35vh",
+        48: "48vh",
         60: "60vh",
         75: "75vh",
         78: "78vh",
