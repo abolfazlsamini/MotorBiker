@@ -178,42 +178,11 @@
     }
   }
 }
-/* .firstpicmobile {
-  width: 100%;
-  background: linear-gradient(
-      0deg,
-      rgb(13, 13, 13) 40%,
-      rgba(13, 13, 13, 0) 60%
-    ),
-    url(https://ubiservices.cdn.ubi.com/66fcdb38-e7c2-45dd-a1c4-acbd7086d00f/news/CAROU_RC_Season3_Rewards.jpg)
-      center top / 100% no-repeat;
-} */
+
 .content {
   background-color: rgb(13, 13, 13);
 }
-/* .firstpic {
-  width: 100%;
-  height: 100%;
-  background: url("../../public/home/circlecarousel.avif") left top no-repeat,
-    linear-gradient(0deg, rgb(13, 13, 13) 11.54%, rgba(13, 13, 13, 0) 42.55%),
-    radial-gradient(
-      54% 115% at 33% -5%,
-      rgba(255, 0, 184, 0.2) 0%,
-      rgba(36, 0, 255, 0) 100%
-    ),
-    radial-gradient(
-      45% 125% at 0% 96%,
-      rgba(255, 92, 0, 0.2) 0%,
-      rgba(255, 61, 0, 0) 100%
-    ),
-    radial-gradient(
-      19% 65% at 0% 0%,
-      rgba(255, 0, 61, 0.15) 0%,
-      rgba(221, 0, 0, 0) 100%
-    ),
-    linear-gradient(90deg, rgb(13, 13, 13) 45.36%, rgba(36, 36, 36, 0) 57.45%),
-    url("../../public/home/carousel2.jpg") right top / 60% no-repeat;
-} */
+
 .firstpic {
   transition: opacity 0.5s ease-in-out;
 }
