@@ -22,6 +22,7 @@ module.exports = {
         ubigray: "#121212",
         ubiblue: "#007aff",
         ubiwhite: "#f2f2f2",
+        ubiblack2: "#0d0d0d",
       },
       zIndex: {
         11: "-1",
@@ -42,9 +43,17 @@ module.exports = {
         99: "99vh",
         110: "110%",
         115: "115vh",
+        400: "400px",
+        900: "900px",
+        70: "70px",
+      },
+      width: {
+        100: "100rem",
+        800: "780px",
       },
       maxWidth: {
         900: "900px",
+        1080: "1080px",
       },
       padding: {
         "1/5": "15%",

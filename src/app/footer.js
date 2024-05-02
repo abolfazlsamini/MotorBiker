@@ -81,7 +81,7 @@ export default function Footer() {
             <nav className="text-slate-50 font-bold text-xl">
               <ul className="flex flex-wrap">
                 <li className="mr-12 mb-6">
-                  <a href="#">Ubisoft</a>
+                  <a href="http://anrex.com/">Anrex.com</a>
                 </li>
                 <li className="mr-12 mb-6">
                   <a href="#">Support</a>
