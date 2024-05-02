@@ -75,10 +75,10 @@ export default function Carousel() {
                   className="firstpicmobile mobile"
                 ></div>
                 <div className=" text-ubiwhite flex flex-col absolute details portrait:items-center justify-center">
-                  <h2 className="text-3xl font-bold sm:text-5xl lg:text-5xl mb-3">
+                  <h2 className="text-3xl font-bold lg:text-5xl mb-3">
                     New Rewards
                   </h2>
-                  <p className="text-2xl sm:text-4xl xl:text-2xl mb-3">
+                  <p className="text-xl xl:text-2xl mb-3">
                     Be ready to rock the stage with new Rewards!
                   </p>
                   <button
