@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: DIN-CondBlack, sans-serif;
+  src: url("../../public/fonts/DINCnd.otf") format("din");
+}
 @media only screen and (min-width: 768px) {
   .parent:hover .child {
     opacity: 1;
@@ -94,6 +98,16 @@
 
 /* carousel */
 @media (orientation: landscape) {
+  .ticket {
+    border: 30px solid transparent;
+    border-style: solid;
+    border-image: url("../../public/border-ticket.png");
+    border-image-slice: 52;
+    border-image-width: 50px;
+    border-image-outset: 2px;
+    border-image-repeat: round round;
+    background-image: url("../../public/bg-yellow-ticket.jpg");
+  }
   .main_content {
     background: linear-gradient(0deg, #0d0d0d 1.55%, rgba(13, 13, 13, 0) 11.08%),
       linear-gradient(180deg, #0d0d0d 0.79%, rgba(13, 13, 13, 0) 8.3%), #0a1626;
@@ -135,6 +149,26 @@
   }
 }
 @media (orientation: portrait) {
+  .ticket {
+    border: 30px solid transparent;
+    border-style: solid;
+    border-image: url("../../public/border-ticket.png");
+    border-image-slice: 52;
+    border-image-width: 20px;
+    border-image-outset: 2px;
+    border-image-repeat: round round;
+    background-image: url("../../public/bg-yellow-ticket.jpg");
+  }
+  /* .firstsection {
+    margin-top: -5%;
+    padding: 10% 0 4%;
+    position: absolute;
+    background-image: url("../../public/bg2.png"), url("../../public/bg2.png");
+    background-position: top right, top left;
+    background-position: -10% 0, 118% -1%;
+    background-size: 33% 20%;
+    background-repeat: no-repeat;
+  } */
   .main_gradient {
     top: -20%;
   }
@@ -201,7 +235,7 @@ html {
 .firstpic {
   transition: opacity 0.5s ease-in-out;
 }
-
+/* motor */
 .arrowcont {
   color: #ff1c38;
   transition: 0.2s ease-in;

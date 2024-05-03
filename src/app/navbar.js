@@ -12,7 +12,7 @@ export default function Navbar() {
   }
   return (
     <div>
-      <nav className="relative px-4 py-6 lg:py-10 flex justify-between items-center bg-black">
+      <nav className="relative px-4 py-4 lg:py-5 flex justify-between items-center bg-black">
         <a className="text-3xl font-bold leading-none lg:hidden" href="/">
           <div className="" alt="logo" viewBox="0 0 10240 10240">
             <Image src="./icon.svg" width={150} height={150}></Image>
@@ -60,7 +60,13 @@ export default function Navbar() {
             </a>
           </li>
           <li className="text-gray-300"></li>
-          <li className="pt-1">
+          <li
+            className={
+              pathname === "/motor"
+                ? "pt-1 border-b-2 border-b-blue-600"
+                : "pt-1"
+            }
+          >
             <a
               className="text-sm text-gray-400 font-bold hover:text-gray-500"
               href="/motor"
@@ -90,13 +96,13 @@ export default function Navbar() {
           <li className="text-gray-300"></li>
         </ul>
         <a
-          className="hidden sm:ml-auto sm:mr-3 lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
+          className="portrait:hidden sm:ml-auto sm:mr-3 lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
           href="#"
         >
           Sign In
         </a>
         <a
-          className="hidden py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+          className="portrait:hidden py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
           href="#"
         >
           Download

@@ -799,7 +799,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div className="flex flex-col text-center w-full md:max-w-1080 mx-auto justify-center align-middle items-center">
+            <div className="flex flex-col text-center w-full md:max-w-1080 mx-auto justify-center align-middle items-center">
               <div
                 className="text-4xl lg:text-5xl font-bold "
                 style={{
@@ -841,7 +841,7 @@ export default function Home() {
                   </div>
                 </a>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
         <Footer />
