@@ -35,13 +35,15 @@ export default function Home() {
               ></Image>
             </div>
             <div
-              className="text-white text-lg font-bold"
-              style={{ fontFamily: "DIN-CondBlack,sans-serif" }}
+              className="text-white text-xl font-bold"
+              // style={{ fontFamily: "DIN-CondBlack,sans-serif" }}
             >
               Rocket : MotorBiker
             </div>
             <br />
-            <div className="text-white text-lg font-bold">AVAILABLE NOW</div>
+            <div className="text-white text-3xl italic pb-5 font-light">
+              AVAILABLE NOW
+            </div>
             <Link className="btnparent" href="#">
               <span className="btn">BUY NOW</span>
             </Link>
@@ -96,17 +98,20 @@ export default function Home() {
               </div>
               <div className=" flex portrait:px-10 justify-center flex-col pb-20 landscape:pl-4 landscape:w-1/2 w-full ">
                 <div
-                  className="text-5xl xl:text-4xl w-full pt-5 pb-5 font-bold"
+                  className="italic text-head lg:text-head2x w-full pt-5 pb-5 font-bold text-ubigray"
                   style={{
-                    fontFamily: "DIN-CondBlack,sans-serif",
+                    fontWeight: "800",
                   }}
                 >
                   IT&apos;S SHOWTIME IN ROCKET
                 </div>
                 <br />
                 <div
-                  className="pb-5 text-base w-full xl:text-base lh leading-relaxed text-ubigray"
-                  style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
+                  className="pb-5 text-base w-full xl:text-xl lh leading-relaxed text-ubigray"
+                  style={{
+                    // fontFamily: "din-pro,Helvetica,sans-serif",
+                    fontWeight: "300",
+                  }}
                 >
                   The Motorbiker arrives at Rocket with fresh playlists,
                   additional events, and brand-new vehicles! Demonstrate your
@@ -150,15 +155,14 @@ export default function Home() {
             ></div>
             <div className="flex flex-col items-center landscape:w-11/12 landscape:flex-row landscape:mx-auto max-w-1440">
               <div className=" flex portrait:px-10 justify-center flex-col landscape:pl-4 landscape:w-3/5 landscape:pr-20 w-full text-slate-50">
-                <div className="text-5xl w-full pt-5 pb-5 font-bold">
+                <div className="text-head lg:text-head2x italic uppercase w-full pt-5 pb-5 font-bold">
                   Check out the reviews from critics on The Rocket Motorbiker!
                 </div>
                 <br />
                 <div
                   className="pb-1 text-base w-full xl:text-base lh leading-relaxed "
                   style={{
-                    fontFamily: "din-pro,Helvetica,sans-serif",
-                    lineHeight: "2",
+                    fontWeight: "300",
                   }}
                 >
                   Secure your pass and be part of a year-long celebration
@@ -193,8 +197,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-65 landscape:h-80">
-          <div className="h-full relative text-center">
+        <div className="relative">
+          <div
+            style={{ paddingBottom: "63%" }}
+            className="relative text-center"
+          >
             <div
               className="rotate-180"
               style={{
@@ -211,25 +218,28 @@ export default function Home() {
               }}
             ></div>
             <div
-              className="relative h-1/2 landscape:h-full"
+              className="relative lg:absolute top-0 left-0 w-full"
               style={{
                 maskImage: "url(mask.svg)",
                 maskSize: "cover",
+                top: "0",
+                left: "0",
               }}
             >
               <Image
                 alt=""
-                className=" h-full w-full"
+                className="w-full"
                 src="/MororBiker Wallpaper.png"
-                fill
+                width={1920}
+                height={1080}
               ></Image>
             </div>
 
-            <div className="absolute mt-10 landscape:top-1/2 landscape:left-1/2 landscape:-translate-x-1/2 landscape:-translate-y-1/2 left-1/5 ">
-              <div className="landscape:text-slate-50 font-bold text-5xl landscape:text-5xl pb-5">
-                WELCOME TO MOTORFEST
+            <div className="absolute mt-10 landscape:top-2/4 landscape:left-1/2 landscape:-translate-x-1/2  left-1/5 ">
+              <div className="lg:text-slate-50 text-black font-bold text-head3x italic landscape:text-head4x pb-2">
+                WELCOME&#160;TO MOTORBIKER
               </div>
-              <div className="landscape:text-slate-50 font-bold text-xl landscape:text-2xl">
+              <div className="lg:text-slate-50 uppercase w-full m-auto font-bold text-xl landscape:text-xl">
                 Secure your admission to a year-long festival crafted for car
                 enthusiasts of all kinds, located on the stunning island of
                 Ya&apos;Hota.
@@ -239,15 +249,15 @@ export default function Home() {
         </div>
         <div className="relative">
           <div>
-            <div className="p-10 relative">
+            <div className="p-16 relative">
               <div
-                className="text-3xl w-min h-min m-auto sm:text-4xl font-bold "
+                className="text-head w-min h-min m-auto sm:text-4xl font-bold "
                 style={{
-                  fontFamily: "DIN-CondBlack, sans-serif",
+                  // fontFamily: "DIN-CondBlack, sans-serif",
                   fontStyle: "italic",
                   background: `url(bg2.png) 0 0 no-repeat, url(bg-yellowtxt2.png) 50% 50% no-repeat`,
                   backgroundSize: "30%, 100%",
-                  padding: "6% 6% 3%",
+                  padding: "3% 6% 3%",
                 }}
               >
                 KEY&#160;HIGHLIGHTS
@@ -271,9 +281,9 @@ export default function Home() {
               <div className=" flex portrait:px-10 flex-col pb-20 landscape:w-1/2 landscape:pr-7 w-full ">
                 <div className="py-10 relative">
                   <div
-                    className="text-3xl sm:text-3xl font-bold "
+                    className="text-head lg:text-head2x italic font-bold "
                     style={{
-                      fontFamily: "din-pro,Helvetica,sans-serif",
+                      // fontFamily: "din-pro,Helvetica,sans-serif",
                       background: `url(bg-redtxt2.png) 0 0 no-repeat, url(bg-yellowtxt.png) 50% 50% no-repeat`,
                       backgroundSize: "30%, 100%",
                       padding: "6% 6% 3%",
@@ -284,7 +294,7 @@ export default function Home() {
                 </div>
                 <br />
                 <div
-                  className="pb-5 text-base w-full xl:text-base lh leading-relaxed text-ubigray"
+                  className="pb-5 text-base w-full xl:text-lg lh leading-relaxed text-ubigray"
                   style={{
                     fontFamily: "din-pro,Helvetica,sans-serif",
                     padding: "0% 6% 3%",
@@ -320,9 +330,9 @@ export default function Home() {
               <div className=" flex portrait:px-10 flex-col pb-20 landscape:w-1/2 landscape:pr-7 w-full ">
                 <div className="py-10 relative">
                   <div
-                    className="text-3xl sm:text-3xl font-bold "
+                    className="text-head lg:text-head2x italic sm:text-3xl font-bold "
                     style={{
-                      fontFamily: "din-pro,Helvetica,sans-serif",
+                      // fontFamily: "din-pro,Helvetica,sans-serif",
                       background: `url(bg-redtxt1.png) 0 0 no-repeat, url(bg-yellowtxt.png) 50% 50% no-repeat`,
                       backgroundSize: "15%, 100%",
                       padding: "6% 6% 3%",
@@ -345,7 +355,7 @@ export default function Home() {
                   the Hawaiian archipelago.
                 </div>
                 <div
-                  className="pb-5 text-base w-full xl:text-base lh leading-relaxed text-ubigray"
+                  className="pb-5 text-base w-full xl:text-lg lh leading-relaxed text-ubigray"
                   style={{
                     fontFamily: "din-pro,Helvetica,sans-serif",
                     padding: "0% 6% 3%",
@@ -380,9 +390,9 @@ export default function Home() {
               <div className=" flex portrait:px-10 flex-col pb-20 landscape:w-1/2 landscape:pr-7 w-full ">
                 <div className="py-10 relative">
                   <div
-                    className="text-3xl sm:text-3xl font-bold "
+                    className="text-head lg:text-head2x italic font-bold "
                     style={{
-                      fontFamily: "din-pro,Helvetica,sans-serif",
+                      // fontFamily: "din-pro,Helvetica,sans-serif",
                       background: `url(bg-redtxt3.png) 0 0 no-repeat, url(bg-yellowtxt.png) 50% 50% no-repeat`,
                       backgroundSize: "30%, 100%",
                       padding: "6% 6% 3%",
@@ -394,7 +404,7 @@ export default function Home() {
                 </div>
                 <br />
                 <div
-                  className="pb-5 text-base w-full xl:text-base lh leading-relaxed text-ubigray"
+                  className="pb-5 text-base w-full xl:text-lg lh leading-relaxed text-ubigray"
                   style={{
                     fontFamily: "din-pro,Helvetica,sans-serif",
                     padding: "0% 6% 3%",
@@ -434,7 +444,7 @@ export default function Home() {
                 ></Image>
               </div>
               <div className="pt-5 pb-20">
-                <div className="text-4xl w-11/12 pt-5 pb-5 font-bold text-center text-slate-50">
+                <div className="text-head2x italic m-auto pt-5 pb-5 font-bold text-center text-slate-50">
                   LIVE GAME MODES
                 </div>
               </div>
@@ -537,19 +547,22 @@ export default function Home() {
                       alt=""
                       className="border-8 border-slate-200 w-full h-full"
                       style={{ boxShadow: "0 .5em 1em 0 rgba(0,0,0,.35)" }}
-                      src="/ticket-img.avif"
+                      src="/ticket-img.png"
                       width={1000}
                       height={1000}
                     ></Image>
                   </div>
                 </div>
                 <div className="sm:pl-2 landscape:py-5 flex landscape:pr-5  text-left justify-center flex-col w-full ">
-                  <div className="text-2xl xl:text-3xl w-full py-5 font-bold">
+                  <div className="text-head italic xl:text-head2x w-full py-5 text-ubigray font-bold">
                     EXPERIENCE THE THRILL OF THE ROCKET MOTORBIKER
                   </div>
                   <div
                     className="pb-5 text-base w-full xl:text-xl pr-3 lh leading-relaxed text-ubigray"
-                    style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
+                    // style={{ fontFamily: "din-pro,Helvetica,sans-serif" }}
+                    style={{
+                      fontWeight: "300",
+                    }}
                   >
                     Purchase The RocketMotorbiker today and become a part of the
                     enduring celebration of automotive culture! Accessible on

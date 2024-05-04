@@ -12,10 +12,10 @@ export default function Navbar() {
   }
   return (
     <div>
-      <nav className="relative px-4 py-4 lg:py-5 flex justify-between items-center bg-black">
+      <nav className="relative px-4 py-1 md:py-3 flex justify-between items-center bg-black">
         <a className="text-3xl font-bold leading-none lg:hidden" href="/">
           <div className="" alt="logo" viewBox="0 0 10240 10240">
-            <Image src="./icon.svg" width={150} height={150}></Image>
+            <Image src="/logo.png" width={150} height={150}></Image>
           </div>
         </a>
         <div className="lg:hidden ">
@@ -38,7 +38,7 @@ export default function Navbar() {
                 alt="logo"
                 viewBox="0 0 10240 10240"
               >
-                <Image src="./icon.svg" fill></Image>
+                <Image src="/logo.png" fill></Image>
               </div>
             </a>
           </li>
@@ -51,8 +51,8 @@ export default function Navbar() {
             <a
               className={
                 pathname === "/"
-                  ? "text-sm text-blue-600 "
-                  : "text-sm text-gray-400 font-bold hover:text-gray-500"
+                  ? "text-lg text-blue-600 "
+                  : "text-lg text-gray-400 font-bold hover:text-gray-500"
               }
               href="/"
             >
@@ -68,10 +68,10 @@ export default function Navbar() {
             }
           >
             <a
-              className="text-sm text-gray-400 font-bold hover:text-gray-500"
+              className="text-lg text-gray-400 font-bold hover:text-gray-500"
               href="/motor"
             >
-              MotorBiker
+              Rocket:MotorBiker
             </a>
           </li>
           <li className="text-gray-300"></li>
@@ -85,8 +85,8 @@ export default function Navbar() {
             <a
               className={
                 pathname === "/token"
-                  ? "text-sm text-blue-600 "
-                  : "text-sm text-gray-400 font-bold hover:text-gray-500"
+                  ? "text-lg text-blue-600 "
+                  : "text-lg text-gray-400 font-bold hover:text-gray-500"
               }
               href="/token"
             >
@@ -96,13 +96,13 @@ export default function Navbar() {
           <li className="text-gray-300"></li>
         </ul>
         <a
-          className="portrait:hidden sm:ml-auto sm:mr-3 lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
+          className="portrait:hidden sm:hidden md:block sm:ml-auto sm:mr-3 lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
           href="#"
         >
           Sign In
         </a>
         <a
-          className="portrait:hidden py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+          className="portrait:hidden sm:hidden md:block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
           href="#"
         >
           Download
@@ -141,7 +141,7 @@ export default function Navbar() {
             <ul>
               <li className="mb-1">
                 <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-lg font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="/"
                 >
                   Home
@@ -149,15 +149,15 @@ export default function Navbar() {
               </li>
               <li className="mb-1">
                 <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-lg font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="/motor"
                 >
-                  MotorBiker
+                  Rocket:MotorBiker
                 </a>
               </li>
               <li className="mb-1">
                 <a
-                  className="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  className="block p-4 text-lg font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
                   href="/token"
                 >
                   Token

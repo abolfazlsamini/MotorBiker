@@ -12,9 +12,49 @@ module.exports = {
       //   "gradient-conic":
       //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       // },
+
+      fontSize: {
+        head: [
+          "20px",
+          {
+            lineHeight: "25px",
+            wordSpacing: "1px",
+            letterSpacing: "-2px",
+            fontWeight: "700",
+          },
+        ],
+        head2x: [
+          "40px",
+          {
+            lineHeight: "45px",
+            wordSpacing: "1px",
+            letterSpacing: "-2px",
+            fontWeight: "700",
+          },
+        ],
+        head3x: [
+          "58px",
+          {
+            lineHeight: "55px",
+            wordSpacing: "1px",
+            letterSpacing: "-2px",
+            fontWeight: "700",
+          },
+        ],
+        head4x: [
+          "68px",
+          {
+            lineHeight: "55px",
+            wordSpacing: "1px",
+            letterSpacing: "-2px",
+            fontWeight: "700",
+          },
+        ],
+      },
       backgroundPosition: {
         "bottom-4": "center bottom 5%",
       },
+
       colors: {
         ubired: "#ff1c38",
         ubiyellow: "ffb52d",
@@ -29,6 +69,7 @@ module.exports = {
         22: "-2",
       },
       height: {
+        15: "15rem",
         20: "20vh",
         30: "30vh",
         35: "35vh",
@@ -52,6 +93,13 @@ module.exports = {
       width: {
         "40%": "40%",
         "60%": "60%",
+        65: "17rem",
+        95: "95px",
+        105: "105px",
+        115: "115px",
+        145: "145px",
+        162: "160px",
+        174: "196px",
         100: "100rem",
         800: "780px",
       },
@@ -74,6 +122,7 @@ module.exports = {
       textColor: {
         ubiblue: "#006ef5",
         ubigray: "#292929",
+        ubiwhite: "#d6d6d6",
       },
     },
   },

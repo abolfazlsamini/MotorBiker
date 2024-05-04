@@ -87,36 +87,33 @@ export default function Footer() {
                   <a href="#">Support</a>
                 </li>
                 <li className="mr-12 mb-6">
-                  <a href="#">Blog</a>
+                  <a href="#">About Us</a>
                 </li>
                 <li className="mr-12 mb-6">
-                  <a href="#">Forums</a>
+                  <a href="#">Share Play</a>
                 </li>
               </ul>
             </nav>
             <nav className="text-terms">
               <ul className="block sm:flex flex-wrap">
                 <li className="mr-12 mb-6">
-                  <a href="#">Terms of Use</a>
+                  <a href="#">Legal Information</a>
                 </li>
                 <li className="mr-12 mb-6">
-                  <a href="#">Privacy policy</a>
+                  <a href="#">WhitePaper</a>
                 </li>
                 <li className="mr-12 mb-6">
-                  <a href="#">Set cookies</a>
+                  <a href="#">Privacy Policy</a>
                 </li>
                 <li className="mr-12 mb-6">
-                  <a href="#">Licenses</a>
-                </li>
-                <li className="mr-12 mb-6">
-                  <a href="#">Do not sell my personal information</a>
+                  <a href="#">Free Event</a>
                 </li>
               </ul>
             </nav>
           </div>
         </div>
         <div className="bg-ubigray text-xs w-max text-slate-50 p-2 rounded-lg mb-6">
-          © Ubisoft Entertainment. All Rights Reserved.
+          © Anrex Entertaiment . All Rights Reserved
         </div>
       </div>
     </footer>
