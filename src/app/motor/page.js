@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../navbar";
+import Footer from "../footer";
 
 export default function Home() {
   return (
@@ -594,6 +595,7 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <Footer />
     </>
   );
 }
