@@ -42,9 +42,9 @@ module.exports = {
           },
         ],
         head4x: [
-          "68px",
+          "88px",
           {
-            lineHeight: "55px",
+            lineHeight: "75px",
             wordSpacing: "1px",
             letterSpacing: "-2px",
             fontWeight: "700",
@@ -93,6 +93,7 @@ module.exports = {
       width: {
         "40%": "40%",
         "60%": "60%",
+        "80%": "80%",
         65: "17rem",
         95: "95px",
         105: "105px",

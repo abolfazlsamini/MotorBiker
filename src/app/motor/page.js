@@ -199,7 +199,7 @@ export default function Home() {
 
         <div className="relative">
           <div
-            style={{ paddingBottom: "63%" }}
+            // style={{ paddingBottom: "63%" }}
             className="relative text-center"
           >
             <div
@@ -218,7 +218,7 @@ export default function Home() {
               }}
             ></div>
             <div
-              className="relative lg:absolute top-0 left-0 w-full"
+              className="relative w-full"
               style={{
                 maskImage: "url(mask.svg)",
                 maskSize: "cover",
@@ -235,11 +235,11 @@ export default function Home() {
               ></Image>
             </div>
 
-            <div className="absolute mt-10 landscape:top-2/4 landscape:left-1/2 landscape:-translate-x-1/2  left-1/5 ">
-              <div className="lg:text-slate-50 text-black font-bold text-head3x italic landscape:text-head4x pb-2">
+            <div className="landscape:absolute w-80% mx-auto relative mt-10 landscape:bottom-1/4 landscape:left-1/2 landscape:-translate-x-1/2">
+              <div className="landscape:text-slate-50 text-black font-bold text-head3x italic lg:text-head4x pb-2">
                 WELCOME&#160;TO MOTORBIKER
               </div>
-              <div className="lg:text-slate-50 uppercase w-full m-auto font-bold text-xl landscape:text-xl">
+              <div className="landscape:text-slate-50 uppercase w-full m-auto font-bold text-xl landscape:text-xl">
                 Secure your admission to a year-long festival crafted for car
                 enthusiasts of all kinds, located on the stunning island of
                 Ya&apos;Hota.
