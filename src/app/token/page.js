@@ -8,11 +8,8 @@ export default function Coins() {
     <>
       <title>Token</title>
       <Navbar />
-      <div className="justify-center  flex ">
-        <div
-          className="coins relative w-full"
-          style={{ backgroundColor: "#0d0d0d" }}
-        >
+      <div className="justify-center flex">
+        <div className="relative w-full" style={{ backgroundColor: "#0d0d0d" }}>
           <div className="bg absolute p-0 sm:top-0 sm:bottom-0 sm:left-0 sm:right-0"></div>
           <div className="text-center text-slate-50 pt-12 pb-20 pl-1/5 pr-1/5 sm:pt-32 sm:pb-20 sm:pr-8 sm:pl-8 sm:mt-0 sm:mb-0 sm:ml-auto sm:mr-auto relative max-w-900 ">
             <div className="flex flex-row justify-center">

@@ -27,7 +27,7 @@ export default function Home() {
           </div>
 
           <div className="flex z-10 relative items-center justify-end flex-col pb-10 h-full">
-            <div className="w-2/3 sm:w-1/3 lg:w-2/3 max-w-600">
+            <div className="w-350 md:w-350 xl:w-710 max-w-600">
               <Image
                 alt=""
                 src={"/logovid.png"}
@@ -207,7 +207,7 @@ export default function Home() {
               className="rotate-180"
               style={{
                 position: "absolute",
-                top: "0",
+                top: "-1px",
                 left: "0",
                 zIndex: "1",
                 width: "100%",
@@ -237,7 +237,7 @@ export default function Home() {
             </div>
 
             <div className="landscape:absolute w-80% mx-auto relative mt-10 landscape:bottom-1/4 landscape:left-1/2 landscape:-translate-x-1/2">
-              <div className="landscape:text-slate-50 text-black font-bold text-head3x italic lg:text-head4x pb-2">
+              <div className="landscape:text-slate-50 text-black font-bold text-head2x italic lg:text-head4x pb-2">
                 WELCOME&#160;TO MOTORBIKER
               </div>
               <div className="landscape:text-slate-50 uppercase w-full m-auto font-bold text-xl landscape:text-xl">

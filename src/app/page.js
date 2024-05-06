@@ -13,7 +13,7 @@ const Intro = () => {
         url(home/meteor2.avif) bottom / 100%, 
         url(home/meteor3.avif) 100% 100% / 30%, 
         radial-gradient(50% 40.33% at 50% 45.76%, #0a1626 44.79%, 
-          rgba(10, 22, 38, 0) 100%);`,
+          rgba(10, 22, 38, 0) 100%)`,
         backgroundRepeat: "no-repeat",
         fontFamily: "Roboto,sans-serif",
       }}

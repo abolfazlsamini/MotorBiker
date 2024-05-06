@@ -12,11 +12,14 @@ export default function Navbar() {
   }
   return (
     <div>
-      <nav className="relative px-4 py-1 md:py-3 flex justify-between items-center bg-black">
+      <nav className="relative px-4 py-1 lg:py-9 xl:py-5 md:py-7 sm:py-5 flex justify-between items-center bg-black">
         <a className="text-3xl font-bold leading-none lg:hidden" href="/">
-          <div className="" alt="logo" viewBox="0 0 10240 10240">
-            <Image src="/logo.png" width={150} height={150}></Image>
-          </div>
+          <Image
+            className="max-w-60%"
+            src="/logo.png"
+            width={250}
+            height={150}
+          ></Image>
         </a>
         <div className="lg:hidden ">
           <button className="navbar-burger flex items-center text-blue-600 p-3">
@@ -31,28 +34,29 @@ export default function Navbar() {
           </button>
         </div>
         <ul className="hidden absolute top-1/2 left-0 transform -translate-y-1/2 translate-x-3 lg:flex lg:mx-auto lg:items-le lg:w-auto lg:space-x-6 sm:space-x-3">
-          <li className="">
-            <a className="text-3xl font-bold leading-none" href="/">
-              <div
-                className="relative h-10 w-28 "
-                alt="logo"
-                viewBox="0 0 10240 10240"
-              >
-                <Image src="/logo.png" fill></Image>
-              </div>
+          <li>
+            <a className=" font-bold leading-none" href="/">
+              <Image
+                className="max-w-80%"
+                src="/logo.png"
+                width={150}
+                height={150}
+              ></Image>
             </a>
           </li>
-          <li className="text-gray-300"></li>
+          <li className="text-gray-300 "></li>
           <li
             className={
-              pathname === "/" ? "pt-1 border-b-2 border-b-blue-600" : "pt-1"
+              pathname === "/"
+                ? "pb-2 border-b-2 flex border-b-blue-600"
+                : "pb-2 flex"
             }
           >
             <a
               className={
                 pathname === "/"
-                  ? "text-lg text-blue-600 "
-                  : "text-lg text-gray-400 font-bold hover:text-gray-500"
+                  ? "text-xl text-blue-600 self-center"
+                  : "text-xl text-gray-400 self-center font-bold hover:text-gray-500"
               }
               href="/"
             >
@@ -63,12 +67,12 @@ export default function Navbar() {
           <li
             className={
               pathname === "/motor"
-                ? "pt-1 border-b-2 border-b-blue-600"
-                : "pt-1"
+                ? "pb-2 border-b-2 flex border-b-blue-600"
+                : "pb-2 flex"
             }
           >
             <a
-              className="text-lg text-gray-400 font-bold hover:text-gray-500"
+              className="text-xl text-gray-400  self-center font-bold hover:text-gray-500"
               href="/motor"
             >
               Rocket:MotorBiker
@@ -78,15 +82,15 @@ export default function Navbar() {
           <li
             className={
               pathname === "/token"
-                ? "pt-1 border-b-2 border-b-blue-600"
-                : "pt-1"
+                ? "pb-2 border-b-2 flex self-center  border-b-blue-600"
+                : "pb-2 flex self-center "
             }
           >
             <a
               className={
                 pathname === "/token"
-                  ? "text-lg text-blue-600 "
-                  : "text-lg text-gray-400 font-bold hover:text-gray-500"
+                  ? "text-xl text-blue-600  self-center "
+                  : "text-xl text-gray-400  self-center font-bold hover:text-gray-500"
               }
               href="/token"
             >
@@ -94,15 +98,34 @@ export default function Navbar() {
             </a>
           </li>
           <li className="text-gray-300"></li>
+          <li
+            className={
+              pathname === "/share-play"
+                ? "pb-2 border-b-2 flex border-b-blue-600"
+                : "pb-2 flex"
+            }
+          >
+            <a
+              className={
+                pathname === "/share-play"
+                  ? "text-xl text-blue-600  self-center "
+                  : "text-xl text-gray-400 font-bold self-center  hover:text-gray-500"
+              }
+              href="/share-play"
+            >
+              Share-Play
+            </a>
+          </li>
+          <li className="text-gray-300"></li>
         </ul>
         <a
-          className="portrait:hidden sm:hidden md:block sm:ml-auto sm:mr-3 lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200"
+          className="portrait:hidden sm:hidden md:block sm:ml-auto sm:mr-3 lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl "
           href="#"
         >
           Sign In
         </a>
         <a
-          className="portrait:hidden sm:hidden md:block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl transition duration-200"
+          className="portrait:hidden sm:hidden md:block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-sm text-white font-bold rounded-xl "
           href="#"
         >
           Download
@@ -161,6 +184,14 @@ export default function Navbar() {
                   href="/token"
                 >
                   Token
+                </a>
+              </li>
+              <li className="mb-1">
+                <a
+                  className="block p-4 text-lg font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                  href="/share-play"
+                >
+                  Share-Play
                 </a>
               </li>
             </ul>
