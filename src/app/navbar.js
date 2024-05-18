@@ -14,7 +14,7 @@ export default function Navbar() {
     <div>
       <nav className="relative px-4 py-1 lg:py-9 xl:py-5 md:py-7 sm:py-5 flex justify-between items-center bg-black">
         <a className="text-3xl font-bold leading-none lg:hidden" href="/">
-          <Image
+          <Image alt=""
             className="max-w-60%"
             src="/logo.png"
             width={250}
@@ -37,6 +37,7 @@ export default function Navbar() {
           <li>
             <a className=" font-bold leading-none" href="/">
               <Image
+              alt=""
                 className="max-w-80%"
                 src="/logo.png"
                 width={150}

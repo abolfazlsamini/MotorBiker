@@ -352,7 +352,7 @@ export default function Home() {
                   }}
                 >
                   Prepare yourself for the ultimate driving escapade on the
-                  captivating island of Ya'Hota, renowned as the crown jewel of
+                  captivating island of Ya&apos;Hota, renowned as the crown jewel of
                   the Hawaiian archipelago.
                 </div>
                 <div
@@ -366,7 +366,7 @@ export default function Home() {
                   participate in high-octane street races amidst the bustling
                   streets of Honolulu, test your off-road prowess on the rugged
                   slopes of a volcano, or perfect your cornering skills on race
-                  tracks. When it's time to unwind, recline on the sun-kissed
+                  tracks. When it&apos;s time to unwind, recline on the sun-kissed
                   beaches while behind the wheel of your preferred supercar, or
                   opt for a buggy to navigate the hidden trails of the lush
                   rainforest.
@@ -419,7 +419,7 @@ export default function Home() {
                   From its initial release and into the future, The ROCKER™
                   Motorbiker will continuously present ample chances for you to
                   showcase your expertise, express your individuality, and etch
-                  your legacy into the annals of the festival's history.
+                  your legacy into the annals of the festival&apos;s history.
                 </div>
               </div>
             </section>

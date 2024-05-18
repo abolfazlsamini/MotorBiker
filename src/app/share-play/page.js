@@ -17,7 +17,7 @@ export default function SharePlay() {
           <div className="share_play_gradient absolute p-0 top-0 bottom-0 left-0 right-0"></div>
           <div className="text-center mt-8 text-slate-50 pt-2 pb-20 sm:pt-2 sm:pb-20 sm:pr-8 sm:pl-8 sm:mt-0 sm:mb-0 sm:ml-auto sm:mr-auto relative max-w-768 xl:max-w-880 px-5 lg:px-0 ">
             <div className="flex flex-row justify-center items-center">
-              <Image width={1000} height={1000} src="/shareplay/shareplayicon.png"></Image>
+              <Image width={1000} alt="" height={1000} src="/shareplay/shareplayicon.png"></Image>
               <div className="xl:text-2xl ml-2 font-bold">SHARE PLAY</div>
               <div
                 className="mx-3 text-black font-bold p-1 px-2 text-xs rounded-md"
