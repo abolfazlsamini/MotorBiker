@@ -75,7 +75,7 @@ export default function Footer() {
         <hr className="border-0 border-t-2 mb-9 sm:mb-11 lg:mb-12 border-slate-50"></hr>
         <div className="flex pt-5 sm:flex-row flex-row-reverse">
           <a href="#" className="relative mr-6 h-16 min-w-12">
-            <Image src="/pr.svg" fill></Image>
+            <Image src="/pr.svg" alt="" fill></Image>
           </a>
           <div className="pl-5 sm:pl-10">
             <nav className="text-slate-50 font-bold text-xl">

@@ -17,7 +17,7 @@ export default function SharePlay() {
           <div className="share_play_gradient absolute p-0 top-0 bottom-0 left-0 right-0"></div>
           <div className="text-center mt-8 text-slate-50 pt-2 pb-20 sm:pt-2 sm:pb-20 sm:pr-8 sm:pl-8 sm:mt-0 sm:mb-0 sm:ml-auto sm:mr-auto relative max-w-768 xl:max-w-880 px-5 lg:px-0 ">
             <div className="flex flex-row justify-center items-center">
-              <img src="/shareplay/shareplayicon.png"></img>
+              <Image width={1000} height={1000} src="/shareplay/shareplayicon.png"></Image>
               <div className="xl:text-2xl ml-2 font-bold">SHARE PLAY</div>
               <div
                 className="mx-3 text-black font-bold p-1 px-2 text-xs rounded-md"
@@ -84,7 +84,7 @@ export default function SharePlay() {
                   Collaborate for mutual benefit!
                 </div>
                 <div>
-                  Exchange tips and strategies to elevate guests' gameplay, or
+                  Exchange tips and strategies to elevate guests&apos; gameplay, or
                   request assistance when encountering obstacles.
                 </div>
               </div>
@@ -102,7 +102,7 @@ export default function SharePlay() {
               </div>
               <div>
                 <div className="xl:text-2xl text-2xl pt-5 font-bold">
-                  Display each other's expertise
+                  Display each other&apos;s expertise
                 </div>
                 <div>
                   Live-stream your session to showcase your prowess, or spice
@@ -118,11 +118,11 @@ export default function SharePlay() {
                 launch anrexconnect app
               </button>
             </div>
-            <img
+            <Image width={1000} height={1000}
               className="py-5 w-full"
               src="/shareplay/line.png"
               alt="separator"
-            ></img>
+            ></Image>
             <div
               className="text-transparent text-4xl xl:text-7xl font-bold my-5"
               style={{
@@ -145,7 +145,7 @@ export default function SharePlay() {
                 }}
               >
                 <div className="absolute -left-8 h-16 w-16 xl:h-20 xl:w-20 xl:-left-10">
-                  <img src="/shareplay/person1.avif" alt="avatar"></img>
+                  <Image width={1000} height={1000} src="/shareplay/person1.avif" alt="avatar"></Image>
                 </div>
                 <div className="xl:text-3xl pb-3 text-2xl pt-5 font-bold">
                   To play as the host
@@ -170,7 +170,7 @@ export default function SharePlay() {
                 }}
               >
                 <div className="absolute -right-8 h-16 w-16 xl:h-20 xl:w-20 xl:-right-10">
-                  <img src="/shareplay/person2.png" alt="avatar"></img>
+                  <Image width={1000} height={1000} src="/shareplay/person2.png" alt="avatar"></Image>
                 </div>
                 <div className="xl:text-3xl pb-3 text-2xl pt-5 font-bold">
                   To play as a guest
@@ -184,7 +184,7 @@ export default function SharePlay() {
               <ul className="list-disc self-start text-start px-9 xl:text-2xl text-xl">
                 <li className="self-start text-start">
                   Please note that the duration of the gaming session may vary
-                  depending on the title. While there's no restriction on the
+                  depending on the title. While there&apos;s no restriction on the
                   number of sessions you can share with guests, each session is
                   subject to time constraints.
                 </li>
@@ -211,11 +211,11 @@ export default function SharePlay() {
                   FAQ
                 </a>
               </div>
-              <img
+              <Image width={1000} height={1000}
                 className="py-5 w-full"
                 src="/shareplay/line.png"
                 alt="separator"
-              ></img>
+              ></Image>
               <div className="px-3">
                 <div
                   className="text-transparent text-4xl xl:text-7xl py-5 font-bold"
@@ -234,7 +234,7 @@ export default function SharePlay() {
                 <br />
                 <div className="text-xl">
                   It is already operational with numerous titles; to verify
-                  compatibility, consult the game's page within the Anrex
+                  compatibility, consult the game&apos;s page within the Anrex
                   Connect desktop app.
                 </div>
                 <br />
@@ -242,7 +242,7 @@ export default function SharePlay() {
                   To aid us in refining this feature, please feel free to report
                   any encountered issues and provide feedback immediately
                   following your session via the in-game notification or on
-                  Ubisoft's platform.
+                  Ubisoft&apos;s platform.
                 </div>
                 <br />
                 <div className="xl:text-2xl pt-5">

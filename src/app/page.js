@@ -40,7 +40,7 @@ const Intro = () => {
         <br />
         <div className="lg:text-2xl">
           Available at no cost, Anrex Connect can be accessed on multiple
-          devices and platforms. Whether you're on your PC, using a mobile app,
+          devices and platforms. Whether you&apos;re on your PC, using a mobile app,
           or playing on consoles (directly through your games), you can easily
           log in using your&#160;
           <a className="text-blue-600 lg:text-2xl" href="#">
@@ -49,17 +49,17 @@ const Intro = () => {
           <div className="flex items-center pt-6 justify-center">
             <a className="" href="#">
               <div className="inline-block mx-2 md:w-145 w-95  ">
-                <Image width={1000} height={1000} src="/home/link1.svg"></Image>
+                <Image alt="" width={1000} height={1000} src="/home/link1.svg"></Image>
               </div>
             </a>
             <a href="#">
               <div className="inline-block mx-2 md:w-162 w-105 ">
-                <Image width={1000} height={1000} src="/home/link2.svg"></Image>
+                <Image alt="" width={1000} height={1000} src="/home/link2.svg"></Image>
               </div>
             </a>
             <a href="#">
               <div className="inline-block md:w-174 w-115">
-                <Image width={1000} height={1000} src="/home/link3.png"></Image>
+                <Image alt="" width={1000} height={1000} src="/home/link3.png"></Image>
               </div>
             </a>
           </div>
@@ -313,7 +313,7 @@ export default function Home() {
               <div className="flex flex-wrap justify-center">
                 <div className="flex flex-col sm:flex-row portrait:flex-col m-auto justify-center w-100 items-center ">
                   <div className="relative flex w-full landscape:pl-5 justify-center my-auto">
-                    <Image
+                    <Image alt=""
                       width={1000}
                       height={1000}
                       src="/home/Anrex Connect Homepage.png"
@@ -358,14 +358,14 @@ export default function Home() {
                       Connect with fellow players on any platform, for any game
                     </div>
                     <div className="lg:text-xl">
-                      No matter if you're gaming on PC or console, you're part
+                      No matter if you&apos;re gaming on PC or console, you&apos;re part
                       of a global community of Anrex gamers, accessing the same
                       set of features. Regular updates will expand your options
                       for engaging with this constantly growing community
                     </div>
                     <br />
                     {/* <div className="lg:text-2xl">
-                      Find friends on all platforms, see what they're playing,
+                      Find friends on all platforms, see what they&apos;re playing,
                       and check their achievements.
                     </div> */}
                     <br />
@@ -381,7 +381,7 @@ export default function Home() {
                     </div>
                     {/* <br />
                     <div className="lg:text-sm text-xs">
-                      *Assassin's Creed Valhalla, Immortals Fenyx Rising, Riders
+                      *Assassin&apos;s Creed Valhalla, Immortals Fenyx Rising, Riders
                       Republic
                     </div> */}
                   </div>
@@ -406,6 +406,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row-reverse portrait:flex-col m-auto justify-center w-100 items-center ">
                   <div className="relative flex w-full landscape:pr-5 justify-center my-auto">
                     <Image
+                    alt=""
                       width={1000}
                       height={1000}
                       src="/home/Celebration Homepage.png"
@@ -462,7 +463,7 @@ export default function Home() {
                       <Link className="text-ubiblue" href="/token">
                         AnrexToken
                       </Link>
-                      , you'll accumulate Units which can be exchanged for
+                      , you&apos;ll accumulate Units which can be exchanged for
                       exclusive incentives.
                     </div>
                     <br />
@@ -514,7 +515,7 @@ export default function Home() {
               <div className="flex flex-wrap justify-center">
                 <div className="flex flex-col sm:flex-row portrait:flex-col m-auto justify-center w-100 items-center ">
                   <div className="relative flex w-full landscape:pl-5 justify-center my-auto landscape:pr-5">
-                    <Image
+                    <Image alt=""
                       width={1000}
                       height={1000}
                       src="/home/Know More and Improve.png"
@@ -576,8 +577,8 @@ export default function Home() {
                     <div className="lg:text-2xl">
                       Monitor your feed to stay updated on all the recent
                       developments in your games: upcoming seasons, fresh
-                      challenges, and rewards... We're here to provide you with
-                      comprehensive updates on the games you're passionate about
+                      challenges, and rewards... We&apos;re here to provide you with
+                      comprehensive updates on the games you&apos;re passionate about
                     </div>
                   </div>
                 </div>
@@ -600,7 +601,7 @@ export default function Home() {
               <div className="flex flex-wrap justify-center">
                 <div className="flex flex-col sm:flex-row-reverse portrait:flex-col m-auto justify-center w-100 items-center ">
                   <div className="relative flex w-full landscape:pr-5 justify-center my-auto">
-                    <Image
+                    <Image alt=""
                       width={1000}
                       height={1000}
                       src="/home/Anrex Connect Homepage.png"
@@ -738,6 +739,7 @@ export default function Home() {
               </div>
               <div className=" w-full max-w-900 h-auto">
                 <Image
+                alt=""
                   src="/home/Access your Ubisoft Connect benefits anytime and anywhere.png"
                   width={1000}
                   height={1000}
@@ -747,6 +749,7 @@ export default function Home() {
                 <a className="" href="#">
                   <div className="inline-block mx-2 md:w-145 w-95  ">
                     <Image
+                    alt=""
                       width={1000}
                       height={1000}
                       src="/home/link1.svg"
@@ -756,6 +759,7 @@ export default function Home() {
                 <a href="#">
                   <div className="inline-block mx-2 md:w-162 w-105 ">
                     <Image
+                    alt=""
                       width={1000}
                       height={1000}
                       src="/home/link2.svg"
@@ -765,6 +769,7 @@ export default function Home() {
                 <a href="#">
                   <div className="inline-block md:w-174 w-115">
                     <Image
+                    alt=""
                       width={1000}
                       height={1000}
                       src="/home/link3.png"
